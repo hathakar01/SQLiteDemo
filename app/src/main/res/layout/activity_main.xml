@@ -19,25 +19,23 @@
         android:hint="Enter Fruit Name" />
 
     <EditText
-        android:id="@+id/edtFrDes"
+        android:id="@+id/edtFrPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_margin="10dp"
         android:textSize="20dp"
-        android:inputType="textPersonName"
-        android:hint="Enter Description" />
+        android:hint="Enter Price" />
 
     <EditText
-        android:id="@+id/edtFrPrice"
+        android:id="@+id/edtFrDes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_margin="10dp"
         android:layout_marginBottom="210dp"
         android:textSize="20dp"
-        android:hint="Enter Price"
-        android:inputType="numberPassword" />
+        android:hint="Enter Description" />
 
     <Button
         android:id="@+id/btnInsert"

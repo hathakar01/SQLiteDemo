@@ -1,6 +1,7 @@
 package com.charusat.sqlitedemo
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -40,6 +41,11 @@ class MainActivity : AppCompatActivity() {
         var id=item.itemId
         if(id.equals(R.id.menuLogout))
         {
+            var prefer:SharedPreferences=getSharedPreferences("mypref", MODE_PRIVATE)
+            var pr_edit=prefer.edit()
+            pr_edit.clear()
+            pr_edit.commit()
+
             var intent = Intent(this,LoginPage::class.java)
             startActivity(intent)
         }

@@ -44,8 +44,8 @@ class DBHelper(context: Context): SQLiteOpenHelper(context, DB_NAME,null, DB_VER
         {
             var id=cursor.getInt(0)                 //Itrected record 1 by 1
             var name=cursor.getString(1)
-            var des=cursor.getString(2)
-            var price=cursor.getInt(3)
+            var price=cursor.getInt(2)
+            var des=cursor.getString(3)
             var fruit=Fruit(id,name,des,price)   // Friut object
             arr.add(fruit)      // add friut obj of array list
         }
